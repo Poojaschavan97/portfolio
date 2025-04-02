@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dcf8e6; /* Light background color */
+        }
+        #cover {
+            background: url('images/blogs.png') no-repeat center center/cover; /* Cover image */
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .blogs-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .blog-section {
+            width: 30%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            text-align: center;
+            padding: 15px;
+        }
+        .blog-section img {
+            width: 75%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .blog-title {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+        .blog-title:hover {
+            color: #3498db;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: none;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Section -->
+    <div id="cover">
+        Blogs
+    </div>
+
+    <!-- Back to Main Page Button -->
+    <a href="mainpage.html" class="back-button">&#8592;</a> <!-- Arrow symbol as back button -->
+
+    <!-- Page Title -->
+    <h1>Blogs</h1>
+    
+    <!-- Blogs Container -->
+    <div class="blogs-container">
+        
+        <!-- Python Blog Section -->
+        <div class="blog-section">
+            <a href="python-blog.html">
+                <img src="images/python-blogs.png" alt="Python Blog">
+                <span class="blog-title">Python</span>
+            </a>
+        </div>
+        
+        <!-- Machine Learning Blog Section -->
+        <div class="blog-section">
+            <a href="ml-blog.html">
+                <img src="images/ml-blogs.jpeg" alt="Machine Learning Blog">
+                <span class="blog-title">Machine Learning</span>
+            </a>
+        </div>
+        
+        <!-- Deep Learning Blog Section -->
+        <div class="blog-section">
+            <a href="dl-blog.html">
+                <img src="images/dl-blogs.jpeg" alt="Deep Learning Blog">
+                <span class="blog-title">Deep Learning</span>
+            </a>
+        </div>
+
+        <!-- NLP Blog Section -->
+        <div class="blog-section">
+            <a href="nlp-blog.html">
+                <img src="images/nlp-blogs.jpeg" alt="NLP Blog">
+                <span class="blog-title">NLP</span>
+            </a>
+        </div>
+
+        <!-- AI Blog Section -->
+        <div class="blog-section">
+            <a href="ai-blog.html">
+                <img src="images/ai-blogs.png" alt="AI Blog">
+                <span class="blog-title">Artificial Intelligence</span>
+            </a>
+        </div>
+
+
+        <!-- Other Blog Section -->
+        <div class="blog-section">
+            <a href="other-blog.html">
+                <img src="images/blogs.jpeg" alt="Other Topics">
+                <span class="blog-title">Other Topics</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

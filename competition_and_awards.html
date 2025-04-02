@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acheivements and Certification.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+        }
+        #cover {
+            background: url('images/awards.jpeg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .awards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .award-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 80%;
+        }
+        .award-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .award-item h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Section -->
+    <div id="cover">
+        Acheivements and Certification.
+    </div>
+
+    <!-- Back to Main Page Button -->
+    <a href="mainpage.html" class="back-button">&#8592;</a>
+
+    <!-- Awards Content -->
+    <div class="awards-container">
+        <div class="award-item">
+            <h2>TCS ion IT </h2>
+            <a href="tcs result1.pdf">
+            <img src="images/tcs result.png" alt="tcs nqt">
+            <p>Result of TCS ion IT NQT</p></a>
+            <a href="tcs phy result.pdf" >
+            <img src="images/pys result.png" alt="tcs psy">
+            <p>TCS Pyscometric Test Result</p></a>
+        </div>
+        <div class="award-item">
+            <a href = "images/data associate certificate.jpg">
+            <img src="images/data associate certificate.jpg" alt="DA Cert">
+            <h2>Data Associate </h2></a>
+            <p>Completed Data Associated Course held in our college.</p>
+        </div>
+        <div class="award-item">
+            <a href="images/ml certificate.jpg">
+            <img src="images/ml certificate.jpg" alt="ML cert">
+            <h2>Machine Learning </h2></a>
+            <p>Completed 2 week workshop on Machine Learning.</p>
+        </div>
+        <div class="award-item">
+            <a href="images/python certificate.jpg">
+            <img src="images/python certificate.jpg" alt="PY Cert">
+            <h2>Python </h2></a>
+            <p>Completed Python course held in our college.</p>
+        </div>
+        <!-- Add more award items as needed -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9cbf8;
+            color: #333;
+        }
+
+        /* Cover Section */
+        #cover {
+            background: url("images/data1.png") no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1e90ff;
+        }
+
+        /* Content Section */
+        #content {
+            display: flex;
+            padding: 40px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #profile-pic {
+            border: 5px solid #070707;; 
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #about-text {
+            width: 50%;
+            font-size: 18px;
+            line-height: 1.6;
+            padding-left: 30px;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cover Photo Section -->
+    <div id="cover">
+        <span style="font-family: emoji;"><p><h2>Pooja Chavan</h2></p>Welcome to My Data Science Journey</span>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <a href="project.html" target="content">Projects</a>
+        <!--<a href="blogs.html" target="content">Blogs</a>-->
+        <a href="resume.html" target="content">Resume</a>
+        <a href="contacts.html" target="content">Contact</a>
+        <a href="competition_and_awards.html" target="content">Acheivements and Certifications</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <div>
+            <img id="profile-pic" src="images/Pooja prof.jpg" alt="My Photo">
+        </div>
+
+        <div id="about-text">
+            <h2>👨‍💻 Hi! I am Pooja and this <i><u>My Journey into Data Science</u></i></h2>
+            <p>
+                During my graduation, I stumbled upon the term *data science* in a lecture. At first, I was hooked by the flashy salary figures 💸 and the fact that I’d still get to use a bit of mathematics 📊—after all, that’s what everyone was asking me about: "What’s next after math?" 🤔 (Spoiler: I had no idea back then!)
+            </p>
+            <p>
+               So, I started digging into data science 🔍, and surprisingly, it wasn’t the salary that held my interest. As I got deeper, I found myself more captivated by its real-world applications 🌐 and the way it seamlessly bridges with mathematics 🧠. In math, I was always focused on the “how” (as in, "how am I supposed to solve this problem?"), but data science handed me something even better—the "why" behind it all 💡.
+            </p>
+            <p>
+                Now, I’m genuinely enjoying this back-and-forth between math and data science 🔄. Who knew that crunching numbers could answer more than just equations?
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Thanks for stopping by! Hope you enjoyed the tour. 🚀 Come back soon – my data isn’t going anywhere! 😉</p>
+    </footer>
+
+</body>
+
+</html>
