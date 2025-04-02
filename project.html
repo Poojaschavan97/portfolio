@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f0d8; /* Background color for the page */
+        }
+        #cover {
+            background: url('images/data10.png') no-repeat center center/cover; /* Cover image */
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .project-section {
+            width: 25%;
+            background-color: #c2ddf0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            text-align: center;
+            padding: 15px;
+        }
+        .project-section img {
+            width: 50%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .project-title {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+        .project-title:hover {
+            color: #3498db;
+        }
+         .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: none;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Section -->
+    <div id="cover">
+
+        <a href="mainpage.html" class="back-button">&#8592;</a>         My Work
+    </div>
+    
+    <!-- Projects Container -->
+    <div class="projects-container">
+        
+        <!-- Python Section -->
+        <div class="project-section">
+            <a href="Other Project.html" target="content">
+                <img src="images/data13.jpeg" alt="Other Project">
+                <span class="project-title">Other Projects </span>
+            </a>
+        </div>
+        
+        <!-- Machine Learning Section -->
+        <div class="project-section">
+            <a href="Machine Learning.html" target="content">
+                <img src="images/ml.jpeg" alt="Machine Learning Project">
+                <span class="project-title">Machine Learning</span>
+            </a>
+        </div>
+        
+        <!-- Deep Learning Section -->
+        <div class="project-section">
+            <a href="Deep learning.html" target="content">
+                <img src="images/dl1.png" alt="Deep Learning Project">
+                <span class="project-title">Deep Learning</span>
+            </a>
+        </div>
+        
+        <!-- NLP Section 
+        <div class="project-section">
+            <a href="Natural_language_processing.html" target="content">
+                <img src="images/nlp2.jpg" alt="NLP Project">
+                <span class="project-title">Natural Language Processing</span>
+            </a>
+        </div>-->
+
+        <!-- Data Visualization Section -->
+        <div class="project-section">
+            <a href="Data Visualization.html" target="content">
+                <img src="images\Data-Vizualisation.png" alt="Data Visualization Project">
+                <span class="project-title">Data Visualization</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

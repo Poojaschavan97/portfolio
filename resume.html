@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d0d5d2;
+        }
+        #cover {
+            background: url('images/data12.png') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            color: white;
+            font-size: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .resume-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .resume-content video {
+            width: 50%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .resume-preview {
+            background-color: "blue";
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        .resume-preview img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .resume-preview a {
+            display: block;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 18px;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        .resume-preview a:hover {
+            color: #2980b9;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #none;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Section -->
+    <div id="cover">
+        Resume
+    </div>
+
+    <!-- Back to Main Page Button -->
+    <a href="mainpage.html" class="back-button">&#8592;</a>
+
+    <!-- Resume Content -->
+    <div class="resume-content">
+        <!-- Video Resume -->
+        <div>
+            <video controls>
+            <source src="videos/video resume.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+        <!-- Text Resume Preview with Image Link -->
+        <div class="resume-preview">
+            <a href="resume1.pdf" target="_blank">
+                <img src="images/resume.png" alt="Text Resume Preview">
+            </a>
+            <a href="resume1.pdf" target="_blank">Download My Resume (pdf)</a>
+        </div>
+    </div>
+
+</body>
+</html>
