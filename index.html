@@ -16,12 +16,24 @@
 
         /* Cover Section */
         #cover {
-    background-image: url("images/data1.png"), url("images/dataV2.png"); 
-    background-repeat: no-repeat, no-repeat;
-    background-position: right center, left center;
-    background-size: contain, 45%;   /* adjust 40-55% */
+    position: relative;
     height: 450px;
+
+    /* Two background layers */
+    background-image: url("images/data1.png"), url("images/dataV2.png");
+    background-repeat: no-repeat, no-repeat;
+    
+    /* Right side main dashboard image */
+    background-position: right center, left center;
+    
+    /* First = right image, Second = left watermark */
+    background-size: 48% auto, 32% auto;   /* adjust easily */
+
+    /* Optional background gradient for better contrast */
+    background-color: #eaf3ff;  /* light pastel blue, safe & clean */
+    /* You may change to: #edf5ff / #f1f6ff / #f6f9ff */
 }
+
 
 
 
