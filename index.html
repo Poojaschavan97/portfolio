@@ -10,18 +10,19 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #BACAF8;
+            background-color: #DCF8FA;
             color: #333;
         }
 
         /* Cover Section */
         #cover {
-    background: url("images/data1.png") no-repeat center;
-    background-size: contain; 
-    background-position: right center; 
-    background-color: #0A0F45; /* fallback if image doesn't cover */
+    background-image: url("images/data1.png"), url("images/datav2.png"); 
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center, left center;
+    background-size: contain, 45%;   /* adjust 40-55% */
     height: 450px;
 }
+
 
 
         /* Navigation */
