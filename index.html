@@ -19,17 +19,22 @@
     position: relative;
     height: 450px;
 
-    /* Gradient + image layers combined */
-    background:
-        linear-gradient(to right, #0a0a1a, #2708C4),
-        url("images/data1.png"),
-        url("images/dataV2.png");
+    /* Optional background gradient for better contrast */
+    background: linear-gradient(to right, #0a0a1a, #2708C4)  /* light pastel blue, safe & clean */
+    /* You may change to: #edf5ff / #f1f6ff / #f6f9ff */
 
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    /* Two background layers */
+    background-image: url("images/data1.png"), url("images/dataV2.png");
+    background-repeat: no-repeat, no-repeat;
+    
+    /* Right side main dashboard image */
     background-position: right center, left center;
-    background-size: 60% auto, 35% auto, cover;
-}
+    
+    /* First = right image, Second = left watermark */
+    background-size: 60% auto, 35% auto;   /* adjust easily */
 
+    
+}
 
 
 
