@@ -18,26 +18,24 @@
         #cover {
     position: relative;
     height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 
-    /* All backgrounds combined properly */
+    /* Order: Top layer to Bottom layer */
     background:
-        linear-gradient(to right, #0a0a1a, #2708C4),
-        url("images/dataV2.png"),
-        url("images/data1.png");
+        /* Layer 1: Left Watermark/Logo */
+        url("images/dataV2.png") no-repeat left 30% center / 28%, 
+        
+        /* Layer 2: Right Dashboard Image */
+        url("images/data1.png") no-repeat right center / 55%, 
+        
+        /* Layer 3: Background Gradient (using transparency to show images) */
+        linear-gradient(to right, rgba(10, 10, 26, 0.95), rgba(39, 8, 196, 0.8));
 
-    background-repeat: no-repeat, no-repeat, no-repeat;
-
-    /* Positions – left logo | right banner */
-    background-position:
-        center,         /* gradient */
-        left 30%,       /* watermark */
-        right center;   /* dashboard image */
-
-    /* Sizes – gradient full | logo small | banner bigger */
-    background-size:
-        cover,
-        28%,            /* adjust 20–40% */
-        55%;            /* adjust 45–70% */
+    /* Optional: Smooth transition for mobile */
+    background-attachment: scroll;
 }
 
 
